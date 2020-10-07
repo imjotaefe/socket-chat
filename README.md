@@ -6,11 +6,17 @@
 
 ![](0YxkVK.gif)
 
-## 🎯Goals
+## 🎯 Goals
 - ✉ `SEND MESSAGES`
 - 📩 `RECIVE MESSAGES` 
 - 🔔 `RECIVE NOTIFICATION`
 
+## 🔌 Usage
+```properties
+-- npm install or yarn
+-- node serve.js
+```  
+Open your browser on http://localhost:3000
 
 ### About
 This small project helped me to learn about the socket. Thanks RocketSeat by the knowledge and idea.
