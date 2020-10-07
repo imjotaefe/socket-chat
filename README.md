@@ -7,9 +7,9 @@
 ![](0YxkVK.gif)
 
 ## 🎯 Goals
-- ✉ `SEND MESSAGES`
-- 📩 `RECIVE MESSAGES` 
-- 🔔 `RECIVE NOTIFICATION`
+- ✉ `TO SEND MESSAGES`
+- 📩 `TO RECIVE MESSAGES` 
+- 🔔 `TO RECIVE NOTIFICATION`
 
 ## 🔌 Usage
 ```properties
