@@ -81,7 +81,6 @@
 
       $('#chat').submit((event) => {
         event.preventDefault()
-
         const author = $('input[name=username]').val()
         const message = $('input[name=message]').val()
 
@@ -93,6 +92,7 @@
           renderMessage(messageObject)
 
           socket.emit('sendMessage', messageObject)
+          document.getElementsByName('message')[0].value = '';
         }
       })
     </script>

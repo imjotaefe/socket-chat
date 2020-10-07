@@ -38,6 +38,10 @@ input {
   border-radius: 15px;
 }
 
+input:focus{
+  outline: none;
+}
+
 button {
   width: 600px;
   height: 50px;
