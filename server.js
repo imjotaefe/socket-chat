@@ -14,4 +14,25 @@ app.use('/', (req, res) => {
   res.render('index.html');
 });
 
+let messages = [];
+
+io.on('connection', socket => {
+  console.log(`socket conectado: ${socket.id}`);
+  
+  var readed = true;
+
+  socket.emit('previousMessage', messages);
+
+  socket.on('sendMessage', data => {
+    messages.push(data);
+    readed = false;
+    socket.broadcast.emit('recivedMessage', {data, readed});
+  })
+
+  socket.on('readMessage', () => {
+    readed = true;
+  })
+  
+})
+
 server.listen(3000);

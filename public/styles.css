@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background-color: #08023b;
 }
 
 * {
@@ -8,38 +9,102 @@ html, body {
   box-sizing: border-box;
 }
 
+.logo{
+  width: 250px;
+}
+
+.logoContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 #chat {
-  height: 100%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
 
 input {
   width: 600px;
-  border: 1px solid #ddd;
   height: 50px;
   padding: 0 20px;
   font-size: 14px;
+  border: none;
+  border-radius: 15px;
 }
 
 button {
   width: 600px;
   height: 50px;
   font-size: 14px;
-  background: #069;
+  background: #0974e5;
   text-align: center;
   line-height: 50px;
   font-weight: bold;
   color: #FFF;
-  margin-top: 10px;
+  margin-top: 20px;
+  border: none;
 }
 
-.messages {
+button:hover{
+  opacity: 0.8;
+  cursor: pointer
+}
+
+button:focus{
+  outline: none;
+}
+
+.message{
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.messagesContainer{
   width: 600px;
-  height: 400px;
+  height: 300px;
   margin: 20px 0;
-  border: 1px solid #ddd;
+  border: none;
   padding: 20px;
+  overflow-y: auto;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 3px;
+}
+
+.notificationContainer{
+  width: 600px;
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+.notificationBox{
+  background-color: rgba(255,255,255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.notification{
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  background-color: #f44242;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: none;
+}
+
+.spacer{
+  height: 20px;
 }
