@@ -32,7 +32,14 @@ io.on('connection', socket => {
   socket.on('readMessage', () => {
     readed = true;
   })
+
+  socket.on('error', function (err) { 
+    console.log("Socket.IO Error"); 
+    console.log(err.stack); // this is changed from your code in last comment
+ });
   
 })
 
-server.listen(3000);
+server.listen(3000, () => {
+  console.log("App online")
+});
